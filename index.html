@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Staff achievements</title>
+	<meta charset="utf-8">
+	<style>
+		body, html {
+			margin: 0;
+			padding: 0;
+			background: whitesmoke;
+		}
+
+		#workersList {
+			background: rgba(200, 200, 255, 0.4);
+			width: 200px;
+			padding: 10px 20px 20px;
+			border-radius: 10px;
+			position: absolute;
+			text-align: center;
+			z-index: 100;
+		}
+
+		#workersList span {
+			width: 100%;
+			position: relative;
+			display: inline-block;
+		}
+
+		.listItem {
+			height: 30px;
+			margin: 10px 0;
+			line-height: 30px;
+			background: steelblue;
+			color: white;
+			border-radius: 10px;
+			display: none;
+		}
+
+		#workersList:hover .listItem {
+			display: block;
+		}
+
+		.listItem:hover {
+			cursor: pointer;
+		}
+
+		.headline {
+			position: absolute;
+			width: 100%;
+			margin-top: 20px;
+			font-size: 25px;
+			text-align: center;
+			color: steelblue;
+		}
+
+		.arr {
+			margin-top: 50px;
+			position: absolute;
+		}
+
+		.item {
+			width: 100px;
+			height: 150px;
+			margin: 20px;
+			float: left;
+		}
+
+		.outerCircle {
+			width: 100px;
+			height: 100px;
+			border: 5px solid #89b8cf;
+			box-sizing: border-box;
+			border-radius: 50px;
+		}
+
+		.circle {
+			display: block;
+			width: 90px;
+		    height: 90px;
+		    position: relative;
+			background: #f3f8fa;
+			background-image: url("pics/pic0.png");
+			background-size: 75%;
+			background-position: center;
+			background-repeat: no-repeat;
+			border-radius: 45px;
+			z-index: 10;
+		}
+
+		.outerSide {
+			width: 35px;
+		    height: 35px;
+		    position: relative;
+		    top: -30px;
+		    left: 60px;
+		    border-radius: 18px;
+		    border: 5px solid #89b8cf;
+		    box-sizing: border-box;
+		}
+
+		.side {
+			background: #f3f8fa;
+			position: relative;
+			width: 25px;
+		    height: 25px;
+		    border-radius: 15px;
+		    z-index: 20;
+		    text-align: center;
+		    line-height: 25px;
+		    font-size: 18px;
+		    font-weight: bold;
+		    color: #89b8cf;
+		}
+
+		.text {
+			width: 100px;
+			text-align: center;
+			font-style: italic;
+			margin-top: 5px;
+			color: grey;
+		}
+
+		.newAchBtn {
+			position: fixed;
+			display: block;
+			width: 50px;
+			height: 50px;
+			bottom: 0px;
+			right: 0px;
+			margin: 50px;
+			padding: 10px;
+			font-size: 25px;
+			font-weight: bold;
+			line-height: 22px;
+			color: steelblue;
+			background: #f3f8fa;
+			border-radius: 10px;
+		    border: 5px solid #89b8cf;
+		}
+
+		.newAchBtn:hover {
+			cursor: pointer;
+		}
+		
+		.newAchBtn:disabled {
+			opacity: 0.4;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="container">
+
+		<div id="workersList">
+			<span>Choose employee</span>
+		</div>
+
+		<div id="holder">
+		</div>
+
+	</div>
+
+
+	<script src="script.js"></script>
+
+</body>
+</html>
